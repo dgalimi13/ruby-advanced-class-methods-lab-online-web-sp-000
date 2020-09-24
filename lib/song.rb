@@ -58,6 +58,9 @@ def self.new_from_filename(filename)
 end
 
 def self.create_from_filename(filename)
+array = filename.split(" - ") 
+
+
 
 end
 
