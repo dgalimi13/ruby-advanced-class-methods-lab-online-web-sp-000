@@ -51,8 +51,8 @@ def self.new_from_filename(filename)
   array = filename.split(" - ")  
   binding.pry
     artist_name = array[0]
-    name = array[1]
-  name.split(".")[0]
+    name = array[1].split(".")[0]
+  
   
 end
 end
