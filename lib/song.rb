@@ -55,6 +55,6 @@ def self.new_from_filename(filename)
   song = self.new_by_name(name)
   binding.pry
 end
-end
+
 
 end
