@@ -64,8 +64,10 @@ artist_name = array[0]
   song = self.new_by_name(name)
   song.artist_name = artist_name
   song.save
+end
 
-
+def self.destroy_all
+  @@all = []
 end
 
 end
