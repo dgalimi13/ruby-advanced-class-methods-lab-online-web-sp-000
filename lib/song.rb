@@ -44,7 +44,15 @@ def self.find_or_create_by_name(name)
 end
 
 def self.alphabetical
-  @@all.sort_by {|a,b| a.title <=> b.title}
+  @@all.sort_by{|song| song.name}
+end
+
+def self.new_from_filename(filename)
+  filename.split(" - ").each_with_index do |val,index|     
+    artist_name = index[0]
+    name = index[1]
+  
+end
 end
 
 end
