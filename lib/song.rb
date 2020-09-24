@@ -48,7 +48,8 @@ def self.alphabetical
 end
 
 def self.new_from_filename(filename)
-  filename.split(" - ").each_with_index do |val,index|     
+  filename.split(" - ").each do |val|  
+  binding.pry
     val.delete(".mp3")
     artist_name = index[0]
     name = index[1]
