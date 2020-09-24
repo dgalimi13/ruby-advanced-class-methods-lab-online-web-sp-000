@@ -49,8 +49,10 @@ end
 
 def self.new_from_filename(filename)
   filename.split(" - ").each_with_index do |val,index|     
+    val.remove(".mp3")
     artist_name = index[0]
     name = index[1]
+    
   
 end
 end
